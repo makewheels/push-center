@@ -39,7 +39,7 @@ public class AliyunMailService {
         request.setMethod(MethodType.POST);
         try {
             SingleSendMailResponse httpResponse = client.getAcsResponse(request);
-            log.info("阿里云发邮件结果；");
+            log.info("阿里云发邮件, toAddress = " + toAddress + ", subject =" + subject);
             String json = JSON.toJSONString(httpResponse);
             log.info(json);
             return JSONObject.parseObject(json);
