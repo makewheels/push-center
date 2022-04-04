@@ -18,4 +18,9 @@ public class PushController {
     public JSONObject sendEmail(@RequestBody EmailRequest emailRequest) {
         return pushService.sendAliyunMail(emailRequest);
     }
+
+    @PostMapping("pushplus")
+    public JSONObject pushplus(@RequestBody PushplusRequest pushplusRequest) {
+        return pushService.sendPushplus(pushplusRequest);
+    }
 }
