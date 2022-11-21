@@ -11,12 +11,7 @@ public class PushService {
     private AliyunMailService aliyunMailService;
 
     public JSONObject sendAliyunMail(EmailRequest emailRequest) {
-        return aliyunMailService.send(emailRequest.getToAddress(), emailRequest.getFromAlias(),
-                emailRequest.getSubject(), emailRequest.getHtmlBody());
+        return aliyunMailService.send(emailRequest.getToAddress(), emailRequest.getFromAlias(), emailRequest.getSubject(), emailRequest.getHtmlBody());
     }
 
-    public JSONObject sendPushplus(PushplusRequest pushplusRequest) {
-
-        return null;
-    }
 }

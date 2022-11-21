@@ -41,18 +41,24 @@
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-dm</artifactId>
-            <version>3.1.0</version>
+            <version>3.3.1</version>
         </dependency>
 
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.7.22</version>
+            <version>5.8.0</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.79</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.guerlab.cloud.dingtalk</groupId>
+            <artifactId>guerlab-cloud-dingtalk-core</artifactId>
+            <version>2022.1.0</version>
         </dependency>
     </dependencies>
 
