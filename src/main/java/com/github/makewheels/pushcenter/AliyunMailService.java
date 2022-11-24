@@ -1,7 +1,6 @@
 package com.github.makewheels.pushcenter;
 
 import cn.hutool.core.codec.Base64;
-import cn.hutool.core.util.IdUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.DefaultAcsClient;
@@ -26,7 +25,7 @@ public class AliyunMailService {
         IAcsClient client = new DefaultAcsClient(profile);
         SingleSendMailRequest request = new SingleSendMailRequest();
 
-        request.setAccountName("master@mail.aliyun.java8.icu");
+        request.setAccountName("master@mail.aliyun.pushcenter.cc");
         request.setFromAlias(fromAlias);//发信人昵称，长度小于15个字符。
         request.setAddressType(1);
         request.setReplyToAddress(false);// 是否启用管理控制台中配置好回信地址
